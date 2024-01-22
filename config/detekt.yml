@@ -1,0 +1,36 @@
+formatting:
+  Indentation:
+    active: true
+    autoCorrect: true
+    indentSize: 4
+  NoWildcardImports:
+    active: true
+
+style:
+  MagicNumber:
+    active: false
+  MaxLineLength:
+    maxLineLength: 120
+  TrailingWhitespace:
+    active: true
+  ReturnCount:
+    active: false
+  UnusedPrivateMember:
+    active: false
+
+naming:
+  FunctionParameterNaming:
+    parameterPattern: _?[a-z][A-Za-z0-9]*
+exceptions:
+  TooGenericExceptionThrown:
+    active: false
+  TooGenericExceptionCaught:
+    active: false
+
+performance:
+  SpreadOperator:
+    active: false
+
+empty-blocks:
+  EmptyFunctionBlock:
+    active: false
