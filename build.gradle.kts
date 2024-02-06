@@ -15,7 +15,7 @@ publishing {
     repositories {
         maven {
             name = "Github"
-            url = uri("https://maven.pkg.github.com/AvalonXR/OSCSDK-Kotlin")
+            url = uri("https://maven.pkg.github.com/Biosense-Collective/OSCSDK-Kotlin")
             credentials {
                 username = System.getenv("GH_USERNAME")
                 password = System.getenv("GH_TOKEN")
