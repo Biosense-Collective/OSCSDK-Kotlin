@@ -14,15 +14,14 @@ version = "1.0-SNAPSHOT"
 publishing {
     repositories {
         maven {
-            name = "Github"
+            name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/Biosense-Collective/OSCSDK-Kotlin")
             credentials {
-                username = System.getenv("GH_USERNAME")
-                password = System.getenv("GH_TOKEN")
+                username = project.findProperty("gprUser") as? String?
+                password = project.findProperty("gprKey") as? String?
             }
         }
     }
-
     publications {
         register<MavenPublication>("gpr") {
             from(components["java"])
